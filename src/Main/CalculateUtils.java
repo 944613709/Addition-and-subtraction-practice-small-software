@@ -5,7 +5,7 @@ import Visualize.MyPanel;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Calculate {
+public class CalculateUtils {
     //	100以内加减法练习小软件（用户目标：小学1年级学生）
     public static void main(String args[]){
         MyPanel myPanel = new MyPanel();

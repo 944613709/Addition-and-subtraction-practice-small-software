@@ -3,7 +3,7 @@ package Visualize;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import Main.Calculate;
+import Main.CalculateUtils;
 import javax.swing.*;
 
 public class MyPanel extends JFrame{
@@ -57,7 +57,7 @@ public class MyPanel extends JFrame{
                 int num1 = Integer.valueOf(jtf1.getText());
                 String op = jtf2.getText();
                 int num2 = Integer.valueOf(jtf3.getText());
-                int ans = Calculate.calculate(num1, num2, op);
+                int ans = CalculateUtils.calculate(num1, num2, op);
                 String ansText = "计算结果为："+ans;
                 ansLabel.setText(ansText);
             }
