@@ -15,9 +15,8 @@ import javax.swing.*;
  * JFrame写的作业
  */
 public class MyLab1Panel extends JFrame {
-    String[] s = {"7","8","9","放弃此题","4","5","6","确定提交答案","1","2","3","开始计时","0","AC","-","结束计时"};
+    String[] buttonValues = {"7","8","9","放弃此题","4","5","6","确定提交答案","1","2","3","开始计时","0","AC","-","结束计时"};
            //index 0   1   2   3      4   5   6   7    8   9   10  11  12  13   14   15
-
     StringBuffer sum=new StringBuffer();
     MyData myData;
     int firstNumber;
@@ -128,18 +127,18 @@ public class MyLab1Panel extends JFrame {
         jp_count.add(jlb_allCount);
         jPanelForNorth.add(jp_count);
 
-        for(int i = 0; i< this.s.length ; i++) {
-            JButton jButton = new JButton(this.s[i]);
+        for(int i = 0; i< this.buttonValues.length ; i++) {
+            JButton jButton = new JButton(this.buttonValues[i]);
             jButtons.add(jButton);
         }
         setLayout(new BorderLayout());
-        for(int i = 0; i< this.s.length ; i++) {  //加入计算器按钮 按窗口大小平均分配
+        for(int i = 0; i< this.buttonValues.length ; i++) {  //加入计算器按钮 按窗口大小平均分配
             panel.add(jButtons.get(i));
         }
 
         //设置按钮监听事件
 
-//        String[] s = {"7","8","9","下一题","4","5","6","确定","1","2","3","开始计时","0","AC","-","结束计时"};
+//        String[] buttonValues = {"7","8","9","下一题","4","5","6","确定","1","2","3","开始计时","0","AC","-","结束计时"};
         //index          0   1   2   3      4   5   6   7    8   9   10  11  12  13   14   15
 
         //构建映射关系
