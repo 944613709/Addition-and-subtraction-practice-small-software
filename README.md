@@ -1,4 +1,6 @@
 # softwareProcess-lab1-master
+哈工大软件过程与工具作业1
+
 100以内加减法练习小软件
 
 #  项目概述
